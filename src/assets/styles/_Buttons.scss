@@ -1,0 +1,85 @@
+
+.btn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:  1.5rem;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    // display: block;
+    font-family: $fontText;
+    width: 200px;
+    height: 50px;
+    i{
+        font-size: 20px;
+    }
+}
+.btn-login {
+    width: 100%;
+    border-radius: 10px;
+    background: $blue;
+    &:hover{
+    background-color:#00375f !important;
+
+    }
+    font-size: 16px;
+}
+.btn-qty{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+}
+.btn-order{
+    width: 80%;
+    height: 50px;
+    
+}
+
+.btn-delete,.btn-edit,.btn-add, .btn-new, .btn-order{
+    margin-top: 1rem;
+    font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif; 
+    font-weight: 900; 
+}
+.btn:hover {
+    color:white;
+    cursor: pointer;
+}  
+
+.btn i {
+    margin-right: 1rem;
+}
+
+.btn-blue {
+    background-color: $blue !important;
+    &:hover{
+    background-color:#00375f !important;
+
+    }
+}
+.btn-red {
+    background-color: $red !important;
+    &:hover{
+    background-color: #711735!important;
+
+    }
+}
+.btn-yellow {
+    background-color: $yellow !important;
+    &:hover{
+        background-color:#d49500!important;
+    
+        }
+}
+// .btn-verde {
+//     background-color: $green;
+// }
+// .btn-naranja {
+//     background-color: var(--naranja);
+// }
+// .btn:disabled {
+//     opacity: .4;
+// }

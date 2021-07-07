@@ -1,0 +1,57 @@
+/**COLORS**/
+$blue: #00487C;
+$red: #A01C48;
+$orange: #F58549;
+$yellow: #ECA400;
+$green: rgb(20, 131, 20);
+
+/**GRAY**/
+$gray: #969696;
+$gray-dark: #707070;
+$gray-light: rgb(243, 243, 243);
+
+/**FONTS**/
+$fontText: 'Raleway', sans-serif;
+$fontHeading: 'Staatliches', cursive;
+// $fontHeading: 'Big Shoulders Stencil Display', cursive;
+
+
+body{
+    background-color: $gray-light;
+    font-size: 1.6rem;
+    font-family: $fontText;
+}
+
+html {
+    
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+a {
+    font-family: $fontText;
+    color: black;
+    text-decoration: none;
+}
+h1{
+    font-family: $fontHeading;
+}
+h2 {
+    font-family: $fontText;
+    color: $gray-dark;
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+
+
+.client, .product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+

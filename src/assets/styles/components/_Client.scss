@@ -1,0 +1,29 @@
+.list__clients,
+.list__products,
+.list__orders {
+    padding: 0;
+}
+.client,
+.product,
+.order,
+.resumen li {
+    padding: 2rem 0;
+    border-bottom: 1px solid $gray-dark !important;
+    list-style: none;
+    list-style: none;
+}
+.client:last-of-type,
+.product:last-of-type, 
+.order:last-of-type{
+    border-bottom: 0;
+}
+
+.name{
+    font-family: $fontText;
+    font-weight: 700;
+}
+
+li{
+    
+    list-style: none;
+}

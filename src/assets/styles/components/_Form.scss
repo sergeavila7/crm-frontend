@@ -1,0 +1,52 @@
+.header-text{
+    font-size: 2.4rem;
+    color: $blue;
+    font-family: $fontText;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-control{
+    font-size: 1.5rem
+}
+
+
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #ced4da;
+    border-left-color: $blue;
+     outline: none; 
+     color: #495057;
+     box-shadow: none;
+   
+}
+.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-add{
+    float:right;
+}
+
+.form{
+    &:focus{
+border-color: lawngreen;
+
+    }
+    input:valid {
+        border-left-color: $blue;
+        border-left-width: 10px;
+    
+    }
+    
+    input:invalid {
+        border-left-color: #f58f8f;
+        border-left-width: 10px;
+    }
+}

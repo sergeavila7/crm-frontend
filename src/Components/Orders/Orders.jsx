@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from 'react';
 import clientAxios from '../../config/Axios';
 import DetailsOrder from './DetailsOrder';
 import { CRMContext } from '../../context/CRMContext';
-
+import { withRouter } from 'react-router-dom';
 function Orders(props) {
   const [orders, setOrders] = useState([]);
   const [auth, setAuth] = useContext(CRMContext);
@@ -44,4 +44,4 @@ function Orders(props) {
   );
 }
 
-export default Orders;
+export default withRouter(Orders);

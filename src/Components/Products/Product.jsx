@@ -45,7 +45,10 @@ function Product({ product, history }) {
       <li className='product d-flex info-product justify-content-between align-items-center'>
         <div className='container__image'>
           {image ? (
-            <img src={`http://localhost:5000/${image}`} alt={name} />
+            <img
+              src={`${process.env.REACT_APP_BACKEND_URL}/${image}`}
+              alt={name}
+            />
           ) : null}
         </div>
         <div>

@@ -36,13 +36,11 @@ function Login(props) {
         Swal.fire({
           icon: 'error',
           title: '¡Algo Ha Salido mal!',
-          text: error.response.data.message,
         });
       } else {
         Swal.fire({
           icon: 'error',
           title: '¡Algo Ha Salido mal!',
-          text: 'Hubo un error',
         });
       }
     }

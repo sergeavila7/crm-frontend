@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-
+import{CgSearch} from 'react-icons/cg'
 const Search = (props) => {
   return (
     <>
@@ -9,14 +9,16 @@ const Search = (props) => {
           Llena todos los campos
         </Form.Text>
         <Form.Group>
-          <Form.Label className='mr-2'>Productos:</Form.Label>
-          <Form.Control
-            className='search'
-            type='text'
-            placeholder='Buscar Producto...'
-            onChange={props.handleChangeSearch}
-            autoFocus
-          />
+          <div className='container-search mx-auto'>
+          <i className="search-icon pr-2"><CgSearch/></i>
+            <Form.Control
+              className='search '
+              type='text'
+              placeholder='Buscar Producto...'
+              onChange={props.handleChangeSearch}
+              autoFocus
+            />
+          </div>
         </Form.Group>
       </Form>
     </>

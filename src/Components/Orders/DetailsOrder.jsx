@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Button } from 'react-bootstrap';
-import { ImPencil, ImCancelCircle } from 'react-icons/im';
+import { ImCancelCircle } from 'react-icons/im';
 import clientAxios from '../../config/Axios';
 import Swal from 'sweetalert2';
 import { CRMContext } from '../../context/CRMContext';
@@ -60,11 +60,12 @@ function DetailsOrder({ order, history }) {
                 key={order._id + articles.product._id}
               >
                 <div className='container__image'>
-                  <img
-                    className=''
-                    src={`http://localhost:5000/${articles.product.image}`}
-                    alt={name}
-                  />
+                  {articles.product.image ? (
+                    <img
+                      src={`${process.env.REACT_APP_BACKEND_URL}/${articles.product.image}`}
+                      alt={name}
+                    />
+                  ) : null}
                 </div>
                 <div>
                   <p>{articles.product.name}</p>

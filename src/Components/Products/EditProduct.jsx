@@ -136,7 +136,7 @@ function EditProduct(props) {
             {/* <FaImage className="fa-image"/> */}
             {image ? (
               <img
-                src={`http://localhost:5000/${image}`}
+                src={`${process.env.REACT_APP_BACKEND_URL}/${image}`}
                 alt={name}
                 width='300'
               />

@@ -1,0 +1,25 @@
+
+.container-search{
+     width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .search{
+     width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+        color: $gray-dark;
+    &-icon{
+        color: $gray-dark;
+    }
+    }
+     &:hover{
+box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+    }
+}
+  

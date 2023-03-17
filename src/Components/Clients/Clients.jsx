@@ -2,12 +2,12 @@ import React, { useEffect, useState, useContext } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import clientAxios from '../../config/Axios';
 import Client from './Client';
-import Spinner from '../Layout/Spinner';
+// import Spinner from '../Layout/Spinner';
 
 import { FaPlusCircle } from 'react-icons/fa';
 import { CRMContext } from '../../context/CRMContext';
 
-function Clients({ history }) {
+function Clients(props) {
   const [clients, setClients] = useState([]);
   const [auth, setAuth] = useContext(CRMContext);
 
@@ -23,18 +23,18 @@ function Clients({ history }) {
           setClients(response.data);
         } catch (error) {
           if ((error.response.status = 500)) {
-            history.push('/login');
+            props.history.push('/login');
           }
         }
       };
       getClients();
     } else {
-      history.push('/login');
+      props.history.push('/login');
     }
   }, [clients]);
 
   if (!auth.auth) {
-    history.push('/login');
+    props.history.push('/login');
   }
 
   // Spinner

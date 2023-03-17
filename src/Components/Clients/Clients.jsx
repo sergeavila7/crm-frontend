@@ -31,7 +31,7 @@ function Clients(props) {
     } else {
       props.history.push('/login');
     }
-  }, [clients]);
+  }, []);
 
   if (!auth.auth) {
     props.history.push('/login');

@@ -27,7 +27,7 @@ function Orders(props) {
     } else {
       props.history.push('/login');
     }
-  }, [orders]);
+  }, []);
 
   if (!auth.auth) {
     props.history.push('/login');

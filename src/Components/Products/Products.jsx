@@ -30,7 +30,7 @@ function Products(props) {
     } else {
       props.history.push('/login');
     }
-  }, [products]);
+  }, []);
 
   if (!auth.auth) {
     props.history.push('/login');
